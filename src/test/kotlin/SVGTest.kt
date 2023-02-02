@@ -3,6 +3,7 @@ import fr.xamez.Style
 import fr.xamez.element.Circle
 import fr.xamez.element.Group
 import fr.xamez.element.Rectangle
+import fr.xamez.element.Text
 import fr.xamez.transform.Translate
 
 fun main() {
@@ -15,6 +16,7 @@ fun main() {
     val rect = Rectangle("20", "20", "30", "30")
     rect.setStyle(Style(fill = "red"))
     g.addElement(rect)
+    g.addElement(Text("0", "0", "Bonjour !"))
     svg.addElement(g)
     svg.generateSVGFile()
 }
