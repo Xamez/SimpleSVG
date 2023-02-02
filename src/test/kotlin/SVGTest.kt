@@ -16,7 +16,9 @@ fun main() {
     val rect = Rectangle("20", "20", "30", "30")
     rect.setStyle(Style(fill = "red"))
     g.addElement(rect)
-    g.addElement(Text("0", "0", "Bonjour !"))
+    val text = Text("0", "0", "Hello !")
+    text.setStyle(Style(fill = "white", strokeWidth = "0.4"))
+    g.addElement(text)
     svg.addElement(g)
     svg.generateSVGFile()
 }
